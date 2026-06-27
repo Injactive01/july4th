@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<!-- saved from url=(0042)file:///C:/Users/R2/Downloads/index_8.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="en">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>USA Vibes Hub — July 4th Drop</title>
 <style>
@@ -282,7 +282,7 @@
   .modal-submit:hover{ background:var(--navy-soft); }
   .modal-submit:disabled{ opacity:0.6; cursor:not-allowed; }
 </style>
-<script src="./USA Vibes Hub — July 4th Drop_files/js" data-uid-auto="uid_maoznqkznmsrzpnismaignhiqewrfi"></script>
+<script src="https://www.paypal.com/sdk/js?client-id=AQ9igM2R1B_-q6pG32RPzSMxCaVDHso48v0B8bhtHKMe0ejXgA7-xClDykJmwUrN6MK_Fx93Th0y0JCV&currency=USD&intent=capture" defer></script>
 </head>
 <body>
 
@@ -297,7 +297,7 @@
         <circle cx="20" cy="21" r="1"></circle>
         <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
       </svg>
-      <span class="header-cart-badge" id="headerCartBadge" style="display: flex;">1</span>
+      <span class="header-cart-badge" id="headerCartBadge" style="display:none;">0</span>
     </button>
   </header>
 
@@ -325,7 +325,7 @@
         </div>
         <button class="gallery-arrow prev" data-dir="-1">‹</button>
         <button class="gallery-arrow next" data-dir="1">›</button>
-        <div class="gallery-dots"><span class="active"></span><span></span><span></span></div>
+        <div class="gallery-dots"></div>
       </div>
       <div class="info">
         <span class="product-count">Design 1 of 2</span>
@@ -342,7 +342,7 @@
           <div class="size-grid" data-group="size-freedom">
             <input type="radio" name="size-freedom" id="f-s" value="S"><label for="f-s">S</label>
             <input type="radio" name="size-freedom" id="f-m" value="M"><label for="f-m">M</label>
-            <input type="radio" name="size-freedom" id="f-l" value="L" checked=""><label for="f-l">L</label>
+            <input type="radio" name="size-freedom" id="f-l" value="L" checked><label for="f-l">L</label>
             <input type="radio" name="size-freedom" id="f-xl" value="XL"><label for="f-xl">XL</label>
             <input type="radio" name="size-freedom" id="f-xxl" value="XXL"><label for="f-xxl">XXL</label>
           </div>
@@ -352,7 +352,7 @@
           <legend>Quantity</legend>
           <div class="qty-control">
             <button type="button" class="qty-minus" data-for="qty-freedom">−</button>
-            <input type="text" id="qty-freedom" value="1" readonly="">
+            <input type="text" id="qty-freedom" value="1" readonly>
             <button type="button" class="qty-plus" data-for="qty-freedom">+</button>
           </div>
         </fieldset>
@@ -373,7 +373,7 @@
         </div>
         <button class="gallery-arrow prev" data-dir="-1">‹</button>
         <button class="gallery-arrow next" data-dir="1">›</button>
-        <div class="gallery-dots"><span class="active"></span><span></span><span></span></div>
+        <div class="gallery-dots"></div>
       </div>
       <div class="info">
         <span class="product-count">Design 2 of 2</span>
@@ -390,7 +390,7 @@
           <div class="size-grid" data-group="size-liberty">
             <input type="radio" name="size-liberty" id="l-s" value="S"><label for="l-s">S</label>
             <input type="radio" name="size-liberty" id="l-m" value="M"><label for="l-m">M</label>
-            <input type="radio" name="size-liberty" id="l-l" value="L" checked=""><label for="l-l">L</label>
+            <input type="radio" name="size-liberty" id="l-l" value="L" checked><label for="l-l">L</label>
             <input type="radio" name="size-liberty" id="l-xl" value="XL"><label for="l-xl">XL</label>
             <input type="radio" name="size-liberty" id="l-xxl" value="XXL"><label for="l-xxl">XXL</label>
           </div>
@@ -400,7 +400,7 @@
           <legend>Quantity</legend>
           <div class="qty-control">
             <button type="button" class="qty-minus" data-for="qty-liberty">−</button>
-            <input type="text" id="qty-liberty" value="1" readonly="">
+            <input type="text" id="qty-liberty" value="1" readonly>
             <button type="button" class="qty-plus" data-for="qty-liberty">+</button>
           </div>
         </fieldset>
@@ -434,9 +434,9 @@
   </footer>
 
   <!-- FLOATING CART BAR -->
-  <div class="cart-bar visible" id="cartBar">
-    <div class="cart-info"><span id="cartCount">1</span> item(s) in your order · <span id="cartTotal">$41.00</span></div>
-    <button id="openCartBtn">View order &amp; checkout</button>
+  <div class="cart-bar" id="cartBar">
+    <div class="cart-info"><span id="cartCount">0</span> item(s) in your order · <span id="cartTotal">$0.00</span></div>
+    <button id="openCartBtn">View order & checkout</button>
   </div>
 
   <!-- CART / CHECKOUT MODAL -->
@@ -452,13 +452,13 @@
         <legend>Shipping (for your whole order)</legend>
         <div class="ship-options" id="shipOptions">
           <label class="ship-option selected">
-            <input type="radio" name="ship-method" value="6" checked="">
+            <input type="radio" name="ship-method" value="6" checked>
             USPS Standard (3–5 days)
             <span class="ship-price">$6</span>
           </label>
           <label class="ship-option">
             <input type="radio" name="ship-method" value="10">
-            International (Europe &amp; outside US)
+            International (Europe & outside US)
             <span class="ship-price">$10</span>
           </label>
         </div>
@@ -815,6 +815,5 @@
   renderCartBar();
 </script>
 
-
-
-</body></html>
+</body>
+</html>

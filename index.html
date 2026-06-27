@@ -637,7 +637,6 @@
     const shipPrice = cart.length > 0 ? getShipPrice() : 0;
     const total = cartSubtotal() + shipPrice;
     document.getElementById('modalTotal').textContent = '$' + total.toFixed(2);
-    document.getElementById('paypalNoteAmount').textContent = '$' + total.toFixed(2);
   }
 
   document.querySelectorAll('input[name="ship-method"]').forEach(input => {
